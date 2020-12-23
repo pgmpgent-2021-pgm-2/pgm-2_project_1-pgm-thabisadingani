@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="static/css/main.css">
+</head>
+<body>
+	<div class="container">
+		<header class="">
+			<div class="header wrapper">
+				<div>
+					<div class="logo">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M255.968 5.329C114.624 5.329 0 120.401 0 262.353c0 113.536 73.344 209.856 175.104 243.872 12.8 2.368 17.472-5.568 17.472-12.384 0-6.112-.224-22.272-.352-43.712-71.2 15.52-86.24-34.464-86.24-34.464-11.616-29.696-28.416-37.6-28.416-37.6-23.264-15.936 1.728-15.616 1.728-15.616 25.696 1.824 39.2 26.496 39.2 26.496 22.848 39.264 59.936 27.936 74.528 21.344 2.304-16.608 8.928-27.936 16.256-34.368-56.832-6.496-116.608-28.544-116.608-127.008 0-28.064 9.984-51.008 26.368-68.992-2.656-6.496-11.424-32.64 2.496-68 0 0 21.504-6.912 70.4 26.336 20.416-5.696 42.304-8.544 64.096-8.64 21.728.128 43.648 2.944 64.096 8.672 48.864-33.248 70.336-26.336 70.336-26.336 13.952 35.392 5.184 61.504 2.56 68 16.416 17.984 26.304 40.928 26.304 68.992 0 98.72-59.84 120.448-116.864 126.816 9.184 7.936 17.376 23.616 17.376 47.584 0 34.368-.32 62.08-.32 70.496 0 6.88 4.608 14.88 17.6 12.352C438.72 472.145 512 375.857 512 262.353 512 120.401 397.376 5.329 255.968 5.329z"/></svg>
+					</div>
+				</div>
+				<div class="covid--weather">
+					<div class="covid__cases"></div>
+					<div class="weather__report"></div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="main wrapper">
+				<section class="main__team">
+					<h3 class="heading">PGM Team</h3>
+					<ul class="pgm__team--user padding" >
+					</ul>
+					<p class="dateOfBirth"></p>
+				</section>
+				<section class="main__repository">
+					<article class="main__repository--top">
+						<h3 class="heading__repository">Repositories</h3>
+						<ul class="user__repository--list padding" >
+						</ul>
+					</article>
+					<article class="main__repository--bottom">
+						<h3 class="heading">Followers</h3>
+						<ul class="user__followers--list padding" >
+						</ul>
+					</article>
+				</section>
+				<section class="main__user">
+					<h3 class="heading">GitHub Users</h3>
+					<form id="get__users" action="" method="GET">
+						<label for = "user__name">
+							<input id="user__name" type="text" placeholder="Type the name here...">
+							<span>Search</span>
+						</label>
+					</form>
+					<ul class="github__users padding">
+					</ul>
+				</section>
+			</div>
+		</main>
+	</div>
+	<script src="static/js/services.js"></script>
+	<script src="static/js/main.js"></script>
+</body>
+</html>

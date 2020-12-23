@@ -1,0 +1,142 @@
+@font-face {
+  font-family: 'montserratbold';
+  src: url('../fonts/montserrat-bold-webfont.woff2') format('woff2'),
+    url('montserrat-bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'montserratitalic';
+  src: url('../fonts/montserrat-italic-webfont.woff2') format('woff2'),
+    url('montserrat-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+
+}
+
+@font-face {
+  font-family: 'montserratregular';
+  src: url('../fonts/montserrat-regular-webfont.woff2') format('woff2'),
+    url('montserrat-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'montserratbold';
+  font-size: 1rem;
+  color: #fff;
+  background-color: #0d1017;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+
+}
+
+header {
+  background-color: #161b21;
+}
+
+.header {
+  padding: 1rem 1rem 0rem 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+h3 {
+  color: #000629;
+  background-color: #59a6ff;
+  padding: 1rem;
+  /* width: 10.5rem; */
+  text-align: center;
+}
+
+.main__repository h3 {
+  width: 9.5rem
+}
+
+.logo {
+  width: 4rem;
+  padding: 0.5rem;
+}
+
+.logo svg {
+  fill: #fff;
+  width: 100%
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 60% 1fr;
+  grid-template-areas:
+    "first second third";
+}
+
+section.main__team {
+  grid-area: first;
+  border-right: 1px solid #ddd;
+}
+
+section.main__repository {
+  grid-area: second;
+  padding: 1rem;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.main__repository--bottom {
+  padding-top: 1rem;
+}
+
+section.main__user {
+  grid-area: third;
+  border-left: 1px solid #ddd;
+}
+
+.padding {
+  padding: 1rem;
+}
+
+form {
+  padding-right: 1rem;
+}
+
+form input {
+  padding: 0.7rem 1.2rem;
+  font-size: 0.7;
+}
+
+.weather__report--inner,
+.covid__cases--inner {
+  display: flex;
+  align-items: center;
+}
+
+.covid__cases--inner {
+  margin-right: 1rem;
+}
+
+.covid__cases--img {
+  width: 4rem;
+}
+
+.covid__cases--img img {
+  width: 100%;
+}
+
+.covid--weather {
+  display: flex;
+  padding-bottom: 1rem;
+}

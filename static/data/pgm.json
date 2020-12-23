@@ -1,0 +1,106 @@
+
+[
+  {
+    "firstName": "Philippe",
+    "lastName": "De Pauw - Waterschoot",
+    "email": "--",
+    "thumbnail":"--",
+    "motto":"--",
+    "portfolio": {
+        "GitHub" :"--",
+        "LinkedIn" :"--"
+    },
+    "isStudent": false,
+    "DateOfBirth":"538012800000" 
+  },
+  {
+    "firstName": "Jeroen",
+    "lastName": "De Pauw - Waterschoot",
+    "email": "--",
+    "thumbnail":"--",
+    "motto":"--",
+    "portfolio": {
+        "GitHub" :"--",
+        "LinkedIn" :"--"
+    },
+    "isStudent": true,
+    "DateOfBirth":"538012800000" 
+  },
+  {
+    "firstName": "Charlotte",
+    "lastName": "De Pauw - Waterschoot",
+    "email": "--",
+    "thumbnail":"--",
+    "motto":"--",
+    "portfolio": {
+        "GitHub" :"--",
+        "LinkedIn" :"--"
+    },
+    "isStudent": true,
+    "DateOfBirth":"538012800000" 
+  },
+  {
+    "firstName": "",
+    "lastName": "De Pauw - Waterschoot",
+    "email": "--",
+    "thumbnail":"--",
+    "motto":"--",
+    "portfolio": {
+        "GitHub" :"--",
+        "LinkedIn" :"--"
+    },
+    "isStudent": false,
+    "DateOfBirth":"538012800000" 
+  },{
+    "firstName": "Philippe",
+    "lastName": "De Pauw - Waterschoot",
+    "email": "--",
+    "thumbnail":"--",
+    "motto":"--",
+    "portfolio": {
+        "GitHub" :"--",
+        "LinkedIn" :"--"
+    },
+    "isStudent": false,
+    "DateOfBirth":"538012800000" 
+  },
+  {
+    "firstName": "Jeroen",
+    "lastName": "De Pauw - Waterschoot",
+    "email": "--",
+    "thumbnail":"--",
+    "motto":"--",
+    "portfolio": {
+        "GitHub" :"--",
+        "LinkedIn" :"--"
+    },
+    "isStudent": true,
+    "DateOfBirth":"538012800000" 
+  },
+  {
+    "firstName": "Charlotte",
+    "lastName": "De Pauw - Waterschoot",
+    "email": "--",
+    "thumbnail":"--",
+    "motto":"--",
+    "portfolio": {
+        "GitHub" :"--",
+        "LinkedIn" :"--"
+    },
+    "isStudent": true,
+    "DateOfBirth":"538012800000" 
+  },
+  {
+    "firstName": "",
+    "lastName": "De Pauw - Waterschoot",
+    "email": "--",
+    "thumbnail":"--",
+    "motto":"--",
+    "portfolio": {
+        "GitHub" :"--",
+        "LinkedIn" :"--"
+    },
+    "isStudent": false,
+    "DateOfBirth":"538012800000" 
+  }
+]
