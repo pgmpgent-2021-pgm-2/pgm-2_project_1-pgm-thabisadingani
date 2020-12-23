@@ -1,5 +1,5 @@
-const GHENT_WEATHER_API = 'http://api.weatherapi.com/v1/current.json?key=%207f7f0720edc44dafab594739202212&q=Ghent';
-const GHENT_COVID_CASES_API = 'https://data.stad.gent/api/records/1.0/search/?dataset=dataset-of-cumulative-number-of-confirmed-cases-by-municipality&q=';
+// const GHENT_WEATHER_API = 'http://api.weatherapi.com/v1/current.json?key=%207f7f0720edc44dafab594739202212&q=Ghent';
+// const GHENT_COVID_CASES_API = 'https://data.stad.gent/api/records/1.0/search/?dataset=dataset-of-cumulative-number-of-confirmed-cases-by-municipality&q=';
 
 (() => {
 	const app = {
@@ -28,22 +28,15 @@ const GHENT_COVID_CASES_API = 'https://data.stad.gent/api/records/1.0/search/?da
    
     },
     async fetchWeather() {
-      try {
-        const response = await fetch(GHENT_WEATHER_API);
-        const jsonData = await response.json();
-        this.updateWeather(jsonData);
-      } catch(error) {
-        console.log(error);
-      }      
+     const weather = new WeatherApi();
+     const weatherGent = await weather.getCurrentWeatherGent();
+     console.log(weatherGent);
+     this.updateWeather(weatherGent)   
     },
     async fetchCovidCases() {
-      try {
-        const response = await fetch(GHENT_COVID_CASES_API);
-        const jsonData = await response.json();
-        this.updateCovidCases(jsonData);
-      } catch(error) {
-        console.log(error);
-      }      
+      const covid = new GhentOpenDataApi();
+      const codidGent = await covid.getCovidCasesGent();
+      this.updateCovidCases(codidGent)  
     },
     updateWeather(weather){
       // console.log(weather);
