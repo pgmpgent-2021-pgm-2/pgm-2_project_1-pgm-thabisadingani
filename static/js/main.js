@@ -10,6 +10,7 @@
 			this.cacheElements();
 			this.buildUI();
       this.registerHTMLForListeners();
+      this.fetchUsers()
 		},
 		cacheElements() {
       console.log('2. cache all existing DOM elements');
@@ -20,23 +21,34 @@
       this.$userRepository = document.querySelector('.user__repository--list');
       this.$userFollowers = document.querySelector('.user__followers--list');
       this.$githubUsers = document.querySelector('.github__users');
+
+      this.$userName = document.querySelector('#user__name')
 		},
 		buildUI() {
       console.log('3. Build the user interface')
 		},
 		registerHTMLForListeners() {
+      this.$userName.addEventListener('input', (e) => {
+        console.log(e.target.value); 
+    });
    
     },
     async fetchWeather() {
-     const weather = new WeatherApi();
-     const weatherGent = await weather.getCurrentWeatherGent();
+     const weather = new WeatherApi(); // weather goes into the Weatherapi object in service.js into getcunt weather grabs data back
+     const weatherGent = await weather.getCurrentWeatherGent(); //weatherGent get data back from 
      console.log(weatherGent);
      this.updateWeather(weatherGent)   
     },
     async fetchCovidCases() {
       const covid = new GhentOpenDataApi();
-      const codidGent = await covid.getCovidCasesGent();
-      this.updateCovidCases(codidGent)  
+      const covidGent = await covid.getCovidCasesGent();
+      this.updateCovidCases(covidGent)  
+    },
+    async fetchUsers() {
+      const users = new UsersApi();
+      const userPGM = await users.getUsers();
+      // this.updatePGMUsers(userPGM);
+      console.log(userPGM);
     },
     updateWeather(weather){
       // console.log(weather);
@@ -66,8 +78,8 @@
         </div>
       `;  
     },
-    getddateOfbirth(date){
-
+    updatePGMUsers(userPGM){
+      // like with
     }
   
 	};
