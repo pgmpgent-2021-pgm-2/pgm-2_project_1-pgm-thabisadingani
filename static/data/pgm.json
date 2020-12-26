@@ -1,106 +1,109 @@
 
 [
   {
+      "id":"1",
     "firstName": "Philippe",
     "lastName": "De Pauw - Waterschoot",
-    "email": "--",
-    "thumbnail":"--",
-    "motto":"--",
+    "email": "philippe.depauw@arteveldehs.be",
+    "thumbnail":"static/media/images/phillippe.jpg",
+    "motto":"",
     "portfolio": {
-        "GitHub" :"--",
-        "LinkedIn" :"--"
+        "GitHub" :"drdynscript",
+        "LinkedIn" :"https://www.linkedin.com/in/philippe-de-pauw-waterschoot-5a5a336/"
     },
     "isStudent": false,
-    "DateOfBirth":"538012800000" 
+    "DateOfBirth":"598981217000" 
   },
-  {
+  { "id":"2",
     "firstName": "Jeroen",
-    "lastName": "De Pauw - Waterschoot",
-    "email": "--",
-    "thumbnail":"--",
-    "motto":"--",
+    "lastName": "Dewelde",
+    "email": "jeroen.dewelde@student.arteveldehs.be",
+    "thumbnail":"static/media/images/jeroen.jpg",
+    "motto":"",
     "portfolio": {
-        "GitHub" :"--",
-        "LinkedIn" :"--"
+        "GitHub" :"pgm-jeroendewelde",
+        "LinkedIn" :"https://www.linkedin.com/in/jeroen-dewelde-162533134/"
     },
     "isStudent": true,
-    "DateOfBirth":"538012800000" 
+    "DateOfBirth":"946050017000" 
   },
-  {
+  { "id":"3",
     "firstName": "Charlotte",
-    "lastName": "De Pauw - Waterschoot",
-    "email": "--",
-    "thumbnail":"--",
-    "motto":"--",
+    "lastName": "Delvaux",
+    "email": "charlotte.delvaux@student.arteveldehs.be",
+    "thumbnail":"static/media/images/charlotte.jpg",
+    "motto":"",
     "portfolio": {
-        "GitHub" :"--",
-        "LinkedIn" :"--"
+        "GitHub" :"pgm-chardelv1",
+        "LinkedIn" :"https://www.linkedin.com/in/be-charlottedelvaux/"
     },
     "isStudent": true,
-    "DateOfBirth":"538012800000" 
+    "DateOfBirth":"693589217000" 
   },
-  {
-    "firstName": "",
-    "lastName": "De Pauw - Waterschoot",
-    "email": "--",
-    "thumbnail":"--",
-    "motto":"--",
+  { "id":"4",
+    "firstName": "Dieter",
+    "lastName": "De Weirdt",
+    "email": "dieter.deweirdt@arteveldehs.be",
+    "thumbnail":"static/media/images/dieter.jpg",
+    "motto":"",
     "portfolio": {
-        "GitHub" :"--",
-        "LinkedIn" :"--"
+        "GitHub" :"dieterdeweirdt",
+        "LinkedIn" :"https://www.linkedin.com/in/dieterdeweirdt/"
     },
     "isStudent": false,
     "DateOfBirth":"538012800000" 
   },{
-    "firstName": "Philippe",
-    "lastName": "De Pauw - Waterschoot",
-    "email": "--",
-    "thumbnail":"--",
+    "id":"5",
+    "firstName": "Michael",
+    "lastName": "Vanderpoorten",
+    "email": "michael.vanderpoorten@arteveldehs.be",
+    "thumbnail":"static/media/images/michael.jpg",
     "motto":"--",
     "portfolio": {
-        "GitHub" :"--",
-        "LinkedIn" :"--"
+        "GitHub" :"yungpanda",
+        "LinkedIn" :"https://www.linkedin.com/in/michaelvanderpoorten/"
     },
     "isStudent": false,
-    "DateOfBirth":"538012800000" 
+    "DateOfBirth":"819819617000" 
   },
-  {
-    "firstName": "Jeroen",
-    "lastName": "De Pauw - Waterschoot",
-    "email": "--",
-    "thumbnail":"--",
+  { 
+      "id":"6",
+    "firstName": "Mathieu",
+    "lastName": "Spillebeen",
+    "email": "mathieu.spillebeen@arteveldehs.be",
+    "thumbnail":"static/media/images/mathieu.jpg",
     "motto":"--",
     "portfolio": {
-        "GitHub" :"--",
-        "LinkedIn" :"--"
-    },
-    "isStudent": true,
-    "DateOfBirth":"538012800000" 
-  },
-  {
-    "firstName": "Charlotte",
-    "lastName": "De Pauw - Waterschoot",
-    "email": "--",
-    "thumbnail":"--",
-    "motto":"--",
-    "portfolio": {
-        "GitHub" :"--",
-        "LinkedIn" :"--"
-    },
-    "isStudent": true,
-    "DateOfBirth":"538012800000" 
-  },
-  {
-    "firstName": "",
-    "lastName": "De Pauw - Waterschoot",
-    "email": "--",
-    "thumbnail":"--",
-    "motto":"--",
-    "portfolio": {
-        "GitHub" :"--",
-        "LinkedIn" :"--"
+        "GitHub" :"mathieuspil",
+        "LinkedIn" :"https://www.linkedin.com/in/mathieuspil/"
     },
     "isStudent": false,
-    "DateOfBirth":"538012800000" 
+    "DateOfBirth":"819819617000" 
+  },
+  { "id":"7",
+    "firstName": "Karelle",
+    "lastName": "Keters",
+    "email": "karelle.keters@student.arteveldehs.be",
+    "thumbnail":"static/media/images/karelleketers.png",
+    "motto":"--",
+    "portfolio": {
+        "GitHub" :"karelleketers",
+        "LinkedIn" :"https://www.linkedin.com/in/karelle-keters-b576331b6/"
+    },
+    "isStudent": true,
+    "DateOfBirth":"882978017000" 
+  },
+  { "id":"8",
+    "firstName": "Nicolas",
+    "lastName": "Cnudde",
+    "email": "nicolas.cnudde@student.arteveldehs.be",
+    "thumbnail":"static/media/images/nicholas.jpg",
+    "motto":"--",
+    "portfolio": {
+        "GitHub" :"pgm-nicolascnudde",
+        "LinkedIn" :"https://www.linkedin.com/in/nicolascnudde/"
+    },
+    "isStudent": true,
+    "DateOfBirth":"819819617000" 
   }
 ]

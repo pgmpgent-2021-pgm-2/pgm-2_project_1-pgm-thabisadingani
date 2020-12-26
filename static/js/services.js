@@ -56,15 +56,6 @@ function  GitHubApi (){
         } catch(error) {
         console.error(error);
       }
-    },
-    this.getUser = async (index) => {
-      try{
-        const response = await fetch(this.USERS_STUDENTS_TEACHERS_API);
-        const jsonData = await response.json();
-        return jsonData;
-      } catch(error) {
-        console.error(error);
-      }
     }
   }
 

@@ -63,6 +63,12 @@ h3 {
   text-align: center;
 }
 
+li {
+  list-style: none;
+  margin-bottom: 1rem;
+  border-bottom: #59a6ff solid 2px;
+}
+
 .main__repository h3 {
   width: 9.5rem
 }
@@ -139,4 +145,31 @@ form input {
 .covid--weather {
   display: flex;
   padding-bottom: 1rem;
+}
+
+div.userInfo--top {
+  display: flex;
+  align-items: center;
+}
+
+.userInfo--top p {
+  font-weight: 200;
+  font-family: sans-serif;
+  font-style: italic;
+  /* font-size: 0.8rem; */
+}
+
+div.image {
+  width: 5rem;
+  padding-right: 0.5rem;
+}
+
+.userInfo img {
+  width: 100%;
+}
+
+p.usersname {
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
