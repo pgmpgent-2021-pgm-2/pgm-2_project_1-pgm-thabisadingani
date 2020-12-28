@@ -63,6 +63,11 @@ h3 {
   text-align: center;
 }
 
+ul {
+  max-height: 70rem;
+  overflow: auto;
+}
+
 li {
   list-style: none;
 }
@@ -114,12 +119,19 @@ section.main__user {
 }
 
 form {
-  padding-right: 1rem;
+  padding: 1rem;
 }
 
 form input {
+  /* margin-top: .5rem; */
   padding: 0.7rem 1.2rem;
-  font-size: 0.7;
+  font-size: 1rem;
+  border-radius: 5rem;
+  background-image: url("../media/images/search.svg");
+  background-position: 98% center;
+  background-repeat: no-repeat;
+  outline: none;
+  width: 100%;
 }
 
 .weather__report--inner,
@@ -239,11 +251,6 @@ li.pgm_user-repo {
   margin-right: 0.1rem;
 }
 
-ul.github__users {
-  max-height: 60rem;
-  overflow: scroll;
-}
-
 .background-cover {
   background-size: cover;
   background-repeat: no-repeat;
@@ -282,6 +289,7 @@ p.teacher__student {
   padding: 0.5rem;
   width: 25%;
   font-weight: 600;
+  font-size: 1.2rem;
 }
 
 div.motto {
@@ -299,10 +307,31 @@ a.LinkedIn__link svg {
   fill: #3c444e;
 }
 
+a.LinkedIn__link svg:hover {
+
+  fill: rgb(89, 166, 255);
+}
+
 p.git__padding--top {
   width: 10rem;
 }
 
 p.git__padding--bottom {
   width: 15rem;
+}
+
+li.follower__search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li.follower__search svg {
+  width: 3rem;
+  fill: darkblue;
+}
+
+.follower__search h5 {
+  font-size: 1.2rem;
 }
