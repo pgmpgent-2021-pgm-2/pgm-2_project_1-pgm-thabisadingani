@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'montserratbold';
+  font-family: 'montserrat';
   src: url('../fonts/montserrat-bold-webfont.woff2') format('woff2'),
     url('montserrat-bold-webfont.woff') format('woff');
   font-weight: bold;
@@ -8,7 +8,7 @@
 }
 
 @font-face {
-  font-family: 'montserratitalic';
+  font-family: 'montserrat';
   src: url('../fonts/montserrat-italic-webfont.woff2') format('woff2'),
     url('montserrat-italic-webfont.woff') format('woff');
   font-weight: normal;
@@ -17,7 +17,7 @@
 }
 
 @font-face {
-  font-family: 'montserratregular';
+  font-family: 'montserrat';
   src: url('../fonts/montserrat-regular-webfont.woff2') format('woff2'),
     url('montserrat-regular-webfont.woff') format('woff');
   font-weight: normal;
@@ -32,7 +32,7 @@
 }
 
 body {
-  font-family: 'montserratbold';
+  font-family: 'montserrat';
   font-size: 1rem;
   color: #fff;
   background-color: #0d1017;
@@ -65,8 +65,6 @@ h3 {
 
 li {
   list-style: none;
-  margin-bottom: 1rem;
-  border-bottom: #59a6ff solid 2px;
 }
 
 .main__repository h3 {
@@ -112,7 +110,7 @@ section.main__user {
 }
 
 .padding {
-  padding: 1rem;
+  padding: 1rem 0rem
 }
 
 form {
@@ -153,7 +151,7 @@ div.userInfo--top {
 }
 
 .userInfo--top p {
-  font-weight: 200;
+
   font-family: sans-serif;
   font-style: italic;
   /* font-size: 0.8rem; */
@@ -172,4 +170,139 @@ p.usersname {
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+li.pgm_user-list {
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+li.pgm_user-list:nth-child(even) {
+  background: #161b21;
+}
+
+li.pgm_user-followers {
+  width: 18.8%;
+  margin: 0.3rem;
+}
+
+ul.user__followers--list {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.follower__img {
+  position: relative;
+}
+
+div.username--followers {
+  position: absolute;
+  bottom: 0rem;
+  padding: 1rem;
+  background-color: #0006299a;
+  font-size: 0.9rem;
+}
+
+.follower__img img {
+  width: 100%;
+}
+
+ul.repoListIcons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+li.pgm_user-repo p,
+li.pgm_user-repo h4 {
+  line-height: 1.5;
+}
+
+ul.repoListIcons p {
+  font-size: 0.9rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+  line-height: 1.8;
+}
+
+li.pgm_user-repo {
+  border: rgba(221, 221, 221, 0.507) 1px solid;
+  border-radius: 0.1rem;
+  padding: 0.5rem;
+}
+
+.repoListIcons svg {
+  width: 1rem;
+  fill: blue;
+  margin-right: 0.1rem;
+}
+
+ul.github__users {
+  max-height: 60rem;
+  overflow: scroll;
+}
+
+.background-cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0vw 50%;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+div.background__cover--inner {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.background-cover h5 {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+
+div.name_age {
+  display: flex;
+  font-size: 1.2rem;
+  background-color: #59a6ff9c;
+  color: #0d1017;
+  padding: 0.5rem;
+  width: 80%;
+  font-weight: 600;
+}
+
+div.name_age p:nth-child(1) {
+  padding-right: 0.2rem;
+}
+
+p.teacher__student {
+  background: linear-gradient(267deg, rgba(89, 166, 255, 1) 6%, rgba(22, 27, 33, 0.7150210425967262) 95%);
+  padding: 0.5rem;
+  width: 25%;
+  font-weight: 600;
+}
+
+div.motto {
+  width: 100%;
+  background-color: #00000080;
+  padding: 0.5rem;
+  line-height: 1.5rem;
+  font-style: italic;
+}
+
+a.LinkedIn__link svg {
+  width: 2rem;
+  position: absolute;
+  right: 0;
+  fill: #3c444e;
+}
+
+p.git__padding--top {
+  width: 10rem;
+}
+
+p.git__padding--bottom {
+  width: 15rem;
 }

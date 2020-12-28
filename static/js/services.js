@@ -82,7 +82,6 @@ function  GhentOpenDataApi (){
       return jsonData;
     }catch(error) {
       console.error(error);
-    }
-    
+    }  
   }
 }

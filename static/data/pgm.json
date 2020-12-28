@@ -5,8 +5,8 @@
     "firstName": "Philippe",
     "lastName": "De Pauw - Waterschoot",
     "email": "philippe.depauw@arteveldehs.be",
-    "thumbnail":"static/media/images/phillippe.jpg",
-    "motto":"",
+    "thumbnail":"static/media/images/phillippe.png",
+    "motto":"Always code as if the person who ends up maintaining your code will be a violent psychopath who knows where you live.",
     "portfolio": {
         "GitHub" :"drdynscript",
         "LinkedIn" :"https://www.linkedin.com/in/philippe-de-pauw-waterschoot-5a5a336/"
@@ -19,7 +19,7 @@
     "lastName": "Dewelde",
     "email": "jeroen.dewelde@student.arteveldehs.be",
     "thumbnail":"static/media/images/jeroen.jpg",
-    "motto":"",
+    "motto":"But, Phillippe... it’s not a bug - it’s a feature!",
     "portfolio": {
         "GitHub" :"pgm-jeroendewelde",
         "LinkedIn" :"https://www.linkedin.com/in/jeroen-dewelde-162533134/"
@@ -32,20 +32,20 @@
     "lastName": "Delvaux",
     "email": "charlotte.delvaux@student.arteveldehs.be",
     "thumbnail":"static/media/images/charlotte.jpg",
-    "motto":"",
+    "motto":"You learn something everyday if you pay attention.",
     "portfolio": {
         "GitHub" :"pgm-chardelv1",
         "LinkedIn" :"https://www.linkedin.com/in/be-charlottedelvaux/"
     },
     "isStudent": true,
-    "DateOfBirth":"693589217000" 
+    "DateOfBirth":"819819617000" 
   },
   { "id":"4",
     "firstName": "Dieter",
     "lastName": "De Weirdt",
     "email": "dieter.deweirdt@arteveldehs.be",
     "thumbnail":"static/media/images/dieter.jpg",
-    "motto":"",
+    "motto":"Always spend more time designing than building.",
     "portfolio": {
         "GitHub" :"dieterdeweirdt",
         "LinkedIn" :"https://www.linkedin.com/in/dieterdeweirdt/"
@@ -58,7 +58,7 @@
     "lastName": "Vanderpoorten",
     "email": "michael.vanderpoorten@arteveldehs.be",
     "thumbnail":"static/media/images/michael.jpg",
-    "motto":"--",
+    "motto":"Clean and correct, but correct above all else.",
     "portfolio": {
         "GitHub" :"yungpanda",
         "LinkedIn" :"https://www.linkedin.com/in/michaelvanderpoorten/"
@@ -72,7 +72,7 @@
     "lastName": "Spillebeen",
     "email": "mathieu.spillebeen@arteveldehs.be",
     "thumbnail":"static/media/images/mathieu.jpg",
-    "motto":"--",
+    "motto":"It is never done until it is fast, responsive, and correct. But if you can’t be fast, at least be responsive. If you still can’t be responsive, at least be correct!",
     "portfolio": {
         "GitHub" :"mathieuspil",
         "LinkedIn" :"https://www.linkedin.com/in/mathieuspil/"
@@ -85,7 +85,7 @@
     "lastName": "Keters",
     "email": "karelle.keters@student.arteveldehs.be",
     "thumbnail":"static/media/images/karelleketers.png",
-    "motto":"--",
+    "motto":"The code is done not when there’s nothing left to add, but when there's nothing left to take away.",
     "portfolio": {
         "GitHub" :"karelleketers",
         "LinkedIn" :"https://www.linkedin.com/in/karelle-keters-b576331b6/"
@@ -98,7 +98,7 @@
     "lastName": "Cnudde",
     "email": "nicolas.cnudde@student.arteveldehs.be",
     "thumbnail":"static/media/images/nicholas.jpg",
-    "motto":"--",
+    "motto":"It’ll be done in two weeks.",
     "portfolio": {
         "GitHub" :"pgm-nicolascnudde",
         "LinkedIn" :"https://www.linkedin.com/in/nicolascnudde/"
