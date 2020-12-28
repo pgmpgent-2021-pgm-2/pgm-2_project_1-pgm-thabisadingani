@@ -61,7 +61,7 @@ function  GitHubApi (){
 
 //weather for Ghent
 function WeatherApi (){
-  this.GHENT_WEATHER_API = 'http://api.weatherapi.com/v1/current.json?key=%207f7f0720edc44dafab594739202212&q=Ghent';
+  this.GHENT_WEATHER_API = 'https://api.weatherapi.com/v1/current.json?key=%207f7f0720edc44dafab594739202212&q=Ghent';
   this.getCurrentWeatherGent = async () =>{
     try{
       const response = await fetch(this.GHENT_WEATHER_API);
