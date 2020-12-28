@@ -20,7 +20,10 @@
       this.$githubUsers = document.querySelector('.github__users');
       this.$mainRepository = document.querySelector('.main__repository');
       this.$coverImage = document.querySelector('.cover__image');
-      this.$userName = document.querySelector('#user__name') 
+      this.$userName = document.querySelector('#user__name');
+      this.$display__dark = document.querySelector('.display__dark');
+      this.$display__light = document.querySelector('.display__light');
+      this.body = document.querySelector('body');
 		},
 		buildUI() {
       console.log('3. Build the user interface')
@@ -32,7 +35,18 @@
         this.buildUIGitHubUser(e.target.value)
         // console.log("The term searched for was " + e.value); 
       });
+      this.$display__light.addEventListener('click', () =>{
+        this.toggleModeView();
+      });
+      this.$display__dark.addEventListener('click', () =>{
+        this.toggleModeView();
+      });
     },
+     toggleModeView() {
+      this.body.classList.toggle('lightmode');
+        this.$display__light.classList.toggle('active_button');
+        this.$display__dark.classList.toggle('active_button');
+     },
     async fetchWeather() {
       const weather = new WeatherApi(); 
       const weatherGent = await weather.getCurrentWeatherGent(); //weatherGent gets data back from API for UI.
@@ -88,11 +102,12 @@
               <div class="image">
                 <img src="${user.thumbnail}">
               </div>
-              <div class="username">
-                <p>${user.portfolio.GitHub}</p>
+              <div class="username__info">
+                <p class="username">${user.portfolio.GitHub}</p>
+                <p class="usersname">${user.firstName} ${user.lastName}</p>
               </div>
             </div>
-            <p class="usersname">${user.firstName} ${user.lastName}</p>
+            
           </div>
         </li>
         `;
@@ -149,7 +164,7 @@
         <li class="pgm_user-repo">
               <div class="username--repo">
                 <h4>${user.full_name}</h4>
-                <p>${user.description !== null ? user.description : ''}</p>
+                <p class="description">${user.description !== null ? user.description : ''}</p>
                 <ul class="repoListIcons">
                 <li>
                   <p>${user.size} KB <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M5.75 21a1.75 1.75 0 110-3.5 1.75 1.75 0 010 3.5zM2.5 19.25a3.25 3.25 0 106.5 0 3.25 3.25 0 00-6.5 0zM5.75 6.5a1.75 1.75 0 110-3.5 1.75 1.75 0 010 3.5zM2.5 4.75a3.25 3.25 0 106.5 0 3.25 3.25 0 00-6.5 0zM18.25 6.5a1.75 1.75 0 110-3.5 1.75 1.75 0 010 3.5zM15 4.75a3.25 3.25 0 106.5 0 3.25 3.25 0 00-6.5 0z"/><path fill-rule="evenodd" d="M5.75 16.75A.75.75 0 006.5 16V8A.75.75 0 005 8v8c0 .414.336.75.75.75z"/><path fill-rule="evenodd" d="M17.5 8.75v-1H19v1a3.75 3.75 0 01-3.75 3.75h-7a1.75 1.75 0 00-1.75 1.75H5A3.25 3.25 0 018.25 11h7a2.25 2.25 0 002.25-2.25z"/></svg></span></p>
@@ -191,18 +206,39 @@
       const followerPGM = await followers.getFollowersOfUser(userPGM);
       this.updateGitUsersFollowerUI(followerPGM); 
     },
-    async buildUIGitHubUser(github){
-      const gitNames = new GitHubApi();
-      const gitName = await gitNames.getSearchUser(github);
-      this.updateGitHubUsersUI(gitName);
-     
-    },
     async updateGitHubUserFollowers(userGitHub){
       const followers = new GitHubApi();
       const followerGit = await followers.getFollowersOfUser(userGitHub);
       this.updateGitUsersFollowerUI(followerGit);
       console.log(followerPGM);
-    },  
+    },
+    updateGitUsersFollowerUI(followersGit){
+      //  console.log(followersPGM);
+      if(followersGit.length !== 0){
+        const followers = followersGit.map((user) => {
+          return`
+          <li class="pgm_user-followers">
+              <div class="follower__img" >
+                <div class="avator">
+                  <img src="${user.avatar_url}">
+                </div>
+                <div class="username--followers">
+                  <p>${user.login}</p>
+                </div>
+              </div>  
+          </li>`;
+        }).join('')
+        this.$userFollowers.innerHTML = followers;
+      }else{
+        console.log("no followers");
+        this.$userFollowers.innerHTML = `<li class="pgm_user-repo follower__search"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19.371 17.952l1.997 1.997a2.504 2.504 0 012.693.562l3.704 3.704a2.51 2.51 0 01-3.55 3.55L20.51 24.06a2.511 2.511 0 01-.557-2.709l-.006.017-2.053-2.053a8.933 8.933 0 01-5.343 1.758h-.015.001a9.037 9.037 0 110-18.074h.001a9.037 9.037 0 016.823 14.963l.009-.011zm-6.833.11c3.328 0 6.025-2.697 6.025-6.025s-2.697-6.025-6.025-6.025c-3.328 0-6.025 2.697-6.025 6.025s2.697 6.025 6.025 6.025z"/></svg><h5>No followers were found!</h5></li>`;
+      }
+    },
+    async buildUIGitHubUser(github){
+      const gitNames = new GitHubApi();
+      const gitName = await gitNames.getSearchUser(github);
+      this.updateGitHubUsersUI(gitName);
+    },   
     updateGitHubUsersUI(gitName){
       const userName = gitName.items.map((user) => {
         return`
@@ -250,28 +286,6 @@
          </div>
         `}
        }).join('');
-    },
-    updateGitUsersFollowerUI(followersGit){
-      //  console.log(followersPGM);
-      if(followersGit.length !== 0){
-        const followers = followersGit.map((user) => {
-          return`
-          <li class="pgm_user-followers">
-              <div class="follower__img" >
-                <div class="avator">
-                  <img src="${user.avatar_url}">
-                </div>
-                <div class="username--followers">
-                  <p>${user.login}</p>
-                </div>
-              </div>  
-          </li>`;
-        }).join('')
-        this.$userFollowers.innerHTML = followers;
-      }else{
-        console.log("no followers");
-        this.$userFollowers.innerHTML = `<li class="pgm_user-repo follower__search"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19.371 17.952l1.997 1.997a2.504 2.504 0 012.693.562l3.704 3.704a2.51 2.51 0 01-3.55 3.55L20.51 24.06a2.511 2.511 0 01-.557-2.709l-.006.017-2.053-2.053a8.933 8.933 0 01-5.343 1.758h-.015.001a9.037 9.037 0 110-18.074h.001a9.037 9.037 0 016.823 14.963l.009-.011zm-6.833.11c3.328 0 6.025-2.697 6.025-6.025s-2.697-6.025-6.025-6.025c-3.328 0-6.025 2.697-6.025 6.025s2.697 6.025 6.025 6.025z"/></svg><h5>No followers were found!</h5></li>`;
-      }
     },
     calculateAge(age){ 
       // this should return age with lots of decimals

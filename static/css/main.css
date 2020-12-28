@@ -64,8 +64,9 @@ h3 {
 }
 
 ul {
-  max-height: 70rem;
-  overflow: auto;
+  max-height: 65rem;
+  /* overflow: auto; */
+  overflow: hidden
 }
 
 li {
@@ -88,7 +89,7 @@ li {
 
 .main {
   display: grid;
-  grid-template-columns: 1fr 60% 1fr;
+  grid-template-columns: 1fr 55% 1fr;
   grid-template-areas:
     "first second third";
 }
@@ -160,14 +161,17 @@ form input {
 div.userInfo--top {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
-.userInfo--top p {
-
-  font-family: sans-serif;
+.username {
+  font-family: 'Arial';
   font-style: italic;
-  /* font-size: 0.8rem; */
+  font-weight: lighter;
+  font-size: 0.9rem;
+  line-height: 2;
 }
+
 
 div.image {
   width: 5rem;
@@ -181,7 +185,9 @@ div.image {
 p.usersname {
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'montserrat';
+  font-size: 0.9rem;
+  /* line-height: 2; */
 }
 
 li.pgm_user-list {
@@ -215,6 +221,8 @@ div.username--followers {
   padding: 1rem;
   background-color: #0006299a;
   font-size: 0.9rem;
+  width: 100%;
+  text-align: center;
 }
 
 .follower__img img {
@@ -232,10 +240,17 @@ li.pgm_user-repo h4 {
   line-height: 1.5;
 }
 
+p.description {
+  font-style: italic;
+  color: #bbb;
+  font-size: 0.9rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.2rem;
+}
+
 ul.repoListIcons p {
   font-size: 0.9rem;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
   line-height: 1.8;
 }
 
@@ -304,13 +319,13 @@ a.LinkedIn__link svg {
   width: 2rem;
   position: absolute;
   right: 0;
-  fill: #3c444e;
+  fill: #59a6ff;
 }
 
-a.LinkedIn__link svg:hover {
+/* a.LinkedIn__link svg:hover {
 
   fill: rgb(89, 166, 255);
-}
+} */
 
 p.git__padding--top {
   width: 10rem;
@@ -334,4 +349,74 @@ li.follower__search svg {
 
 .follower__search h5 {
   font-size: 1.2rem;
+}
+
+/* ======= light mode ====== */
+
+.logo__bnt .bnt {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  outline: none;
+}
+
+Button.active__button {
+  /* width: 3.2rem; */
+  outline: none;
+  border: 2px solid #ddd;
+  background-color: #000;
+  margin-left: 0.5rem;
+}
+
+body.lightmode {
+  color: #000629;
+  background-color: #ddd;
+}
+
+.lightmode header {
+  background-color: rgba(0, 0, 0, .2);
+  ;
+}
+
+.lightmode h3 {
+  color: #fff;
+  background-color: #000629;
+}
+
+.lightmode .logo svg {
+  fill: #000629;
+}
+
+.lightmode li.pgm_user-list:nth-child(even) {
+  background: rgba(0, 0, 0, .2);
+}
+
+.lightmode p.teacher__student {
+  color: #fff;
+}
+
+.lightmode div.motto,
+.lightmode div.username--followers {
+  color: #fff;
+}
+
+.lightmode section.main__team {
+
+  border-right: 0.2rem solid rgba(0, 0, 0, .2);
+  ;
+}
+
+.lightmode section.main__user {
+
+  border-left: 0.2rem solid rgba(0, 0, 0, .2);
+  ;
+}
+
+.lightmode p.description {
+  color: #212121;
+}
+
+.lightmode li.pgm_user-repo {
+  border: rgba(100, 99, 99, 0.507) 1px solid;
+
 }
